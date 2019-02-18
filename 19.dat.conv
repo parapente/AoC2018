@@ -1,0 +1,36 @@
+jump R4+16
+set 1 -> R3
+set 1 -> R1
+mul R3*R1 -> R2
+eq R2 == R5 ? 1 -> R2 : 0 -> R2
+jump R2+R4
+jump R4+1
+add R3+R0 -> R0
+add R1+1 -> R1
+gt R1 > R5 ? 1 -> R2 : 0 -> R2
+jump R4+R2
+jump 2
+add R3+1 -> R3
+gt R3 > R5 ? 1 -> R2 : 0 -> R2
+jump R2+R4
+jump 1
+jump R4*R4
+add R5+2 -> R5
+mul R5*R5 -> R5
+mul R4*R5 -> R5
+mul R5*11 -> R5
+add R2+4 -> R2
+mul R2*R4 -> R2
+add R2+5 -> R2
+add R5+R2 -> R5
+jump R4+R0
+jump 0
+set R4 -> R2
+mul R2*R4 -> R2
+add R4+R2 -> R2
+mul R4*R2 -> R2
+mul R2*14 -> R2
+mul R2*R4 -> R2
+add R5+R2 -> R5
+set 0 -> R0
+set 0 -> R4

@@ -1,0 +1,31 @@
+set 123 -> R4
+and R4 & 456 -> R4
+eq R4 == 72 ? 1 -> R4 : 0 -> R4
+jump R4 + R3
+jump 0
+set 0 -> R4
+or R4 | 65536 -> R5
+set 1855046 -> R4
+and R5 & 255 -> R2
+add R4 + R2 -> R4
+and R4 & 16777215 -> R4
+mul R4 * 65899 -> R4
+and R4 & 16777215 -> R4
+gt 256 > R5 ? 1 -> R2 : 0 -> R2
+jump R2 + R3
+jump R3 + 1
+jump 27
+set 0 -> R2
+add R2 + 1 -> R1
+mul R1 * 256 -> R1
+gt R1 > R5 ? 1 -> R1 : 0 -> R1
+jump R1 + R3
+jump R3 + 1
+jump 25
+add R2 + 1
+jump 17
+set R2 -> R5
+jump 7
+eq R4 == R0 ? 1 -> R2 : 0 -> R2
+jump R2 + R3
+jump 5
